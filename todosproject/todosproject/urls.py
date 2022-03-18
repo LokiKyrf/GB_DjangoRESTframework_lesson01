@@ -23,6 +23,6 @@ router.register('users', UserModelViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api-user/', include('rest_framework.urls')),
+    path('api-users/', include('rest_framework.urls')),
     path('api/', include(router.urls)),
 ]
