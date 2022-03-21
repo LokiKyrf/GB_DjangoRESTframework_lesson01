@@ -39,4 +39,5 @@ const UserList = ({users}) => {
         </table>
     )
 }
+
 export default UserList
