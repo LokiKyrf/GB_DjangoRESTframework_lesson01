@@ -1,7 +1,7 @@
 from rest_framework.renderers import JSONRenderer
 from rest_framework.viewsets import ModelViewSet
 from .models import Users, Project, Task_TODO
-#from .serex import UserSerializer
+# from .serex import UserSerializer
 from .serializers import UserModelSerializer, ProjectModelSerializer, TaskTODOModelSerializer
 from .ex import MUser
 
@@ -19,4 +19,3 @@ class ProjectModelViewSet(ModelViewSet):
 class TaskTODOModelViewSet(ModelViewSet):
     queryset = Task_TODO.objects.all()
     serializer_class = TaskTODOModelSerializer
-
